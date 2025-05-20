@@ -33,5 +33,17 @@ export const jobType = defineType({
       title: 'Icon',
       type: 'image',
     }),
+    defineField({
+      name: 'jobBullets',
+      title: 'Job Bullets',
+      type: 'array',
+      of: [
+        {
+          type: 'string',
+          title: 'Job Bullet',
+          name: 'jobBullet',
+        },
+      ],
+    }),
   ],
 })
